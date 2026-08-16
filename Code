@@ -1,0 +1,23 @@
+public class throwexceptionhandling {
+    public static void main(String[] arr) {
+        int i = 20;
+        int j = 0;
+
+        try {
+            j = 55/i;
+            if(j == 0)
+                throw new ArithmeticException();
+        }
+
+        catch(ArithmeticException e) {
+            System.out.println("Thats the Default Output");
+        }
+
+        catch(Exception e) {
+            System.out.println("Something Went Wrong");
+        }
+        System.out.println(j);
+        System.out.println("Bye");
+    }
+    
+}
